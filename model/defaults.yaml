@@ -1,0 +1,3 @@
+# Shared parameters (can be overridden)
+shared_param: "default_value"
+learning_rate: 0.01

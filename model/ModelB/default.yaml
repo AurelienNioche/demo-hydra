@@ -1,0 +1,8 @@
+# conf/model_b.yaml - Configuration for Model B
+
+# Model-specific parameters
+name: "Model B"
+layers: 4
+activation: "tanh"
+dropout: 0.5
+learning_rate: 0.005

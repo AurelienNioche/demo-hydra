@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Pycharm
+.idea
+
+# Mac
+.DS_Store
+
+# hydra
+outputs
