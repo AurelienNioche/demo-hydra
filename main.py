@@ -6,37 +6,9 @@ import argparse
 import sys # Import sys to access command line arguments directly
 
 def main(cfg: DictConfig) -> None:
-    """
-    Example CLI commands:
-
-    1. Run with model_a config:
-       python main.py model_a
-
-    2. Run with model_b config:
-       python main.py model_b
-
-    3. Run with model_a and override activation:
-       python main.py model_a activation=foutre
-
-    4. Run with model_b and override learning rate:
-       python main.py model_b learning_rate=0.05
-    """
     print("--- Full Configuration ---")
     print(OmegaConf.to_yaml(cfg))
     print("-------------------------")
-
-    print("\n--- Effective Parameters ---")
-    # Access all parameters directly from cfg
-    print(f"Shared parameter: {cfg.shared_param}")
-    print(f"Learning rate: {cfg.learning_rate}")
-    print(f"Model Name: {cfg.name}") # 'name' is now top-level
-    print(f"Layers: {cfg.layers}") # 'layers' is now top-level
-    print(f"Activation: {cfg.activation}") # 'activation' is now top-level
-
-    # Use getattr for optional parameters like dropout, providing a default (None)
-    dropout = getattr(cfg, 'dropout', None)
-    print(f"Dropout: {dropout}")
-    print("--------------------------")
 
 if __name__ == "__main__":
     # Use argparse to get the model name and overrides
