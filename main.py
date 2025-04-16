@@ -3,7 +3,6 @@ import os.path
 import hydra
 from omegaconf import DictConfig, OmegaConf
 import argparse
-import sys # Import sys to access command line arguments directly
 
 def main(cfg: DictConfig) -> None:
     print("--- Full Configuration ---")
