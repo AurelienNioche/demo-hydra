@@ -1,4 +1,7 @@
 # conf/model_b.yaml - Configuration for Model B
+defaults:
+    - ../defaults@
+    - _self_
 
 # Model-specific parameters
 name: "Model B"
